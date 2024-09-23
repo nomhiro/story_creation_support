@@ -15,7 +15,7 @@ const NavList = () => {
   const navList: NavItemType[] = [
     {
       id: 1,
-      label: '世界線を決める',
+      label: '物語を作る',
       link: '/world_line',
       icon: <BsRocketTakeoff className="size-5" />,
     },

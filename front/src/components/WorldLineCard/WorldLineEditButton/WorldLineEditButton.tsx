@@ -8,7 +8,7 @@ interface WoldLineEditButtonProps {
 
 const WoldLineEditButton: React.FC<WoldLineEditButtonProps> = ({id}) => {
   return (
-    <Link href={`world_line/edit/${id}`}>
+    <Link href={`world_line/${id}`}>
       <FaPen className='size-5 text-lg hover:text-gray-700 cursor-pointer' />
     </Link>
   )

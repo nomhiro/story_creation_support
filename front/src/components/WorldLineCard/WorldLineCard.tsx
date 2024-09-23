@@ -1,11 +1,11 @@
 import React from 'react';
 import { WorldLine } from '../../models/WorldLine';
-import TaskDeleteButton from './WorldLineDeleteButton/WorldLineDeleteButton';
-import TaskEditButton from './WorldLineEditButton/WorldLineEditBurron';
+import WorldLineDeleteButton from './WorldLineDeleteButton/WorldLineDeleteButton';
+import WoldLineEditButton from './WorldLineEditButton/WorldLineEditButton';
 
-// 世界線カードコンポーネント
-// 引数 WorldLine: 世界線情報を格納するためのオブジェクト
-const TaskCard: React.FC<WorldLine> = ({
+// 物語カードコンポーネント
+// 引数 WorldLine: 物語情報を格納するためのオブジェクト
+const WorldLineCard: React.FC<WorldLine> = ({
   id,
   world_line,
   era,
@@ -23,8 +23,8 @@ const TaskCard: React.FC<WorldLine> = ({
         <div className="flex justify-between items-center">
           <div className="text-xs text-gray-500 line-clamp-3">{other}</div>
           <div className="flex gap-4">
-            <TaskEditButton id={id!} />
-            <TaskDeleteButton id={id!} />
+            <WoldLineEditButton id={id!} />
+            <WorldLineDeleteButton id={id!} />
           </div>
         </div>
       </div>
@@ -32,4 +32,4 @@ const TaskCard: React.FC<WorldLine> = ({
   );
 };
 
-export default TaskCard
+export default WorldLineCard

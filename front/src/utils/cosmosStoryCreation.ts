@@ -4,12 +4,13 @@ import { CosmosClient } from '@azure/cosmos';
 
 const endpoint = process.env.DATABASE_ENDPOINT!;
 const key = process.env.DATABASE_API_KEY!;
-const databaseId = 'story_creation';
+const databaseId = 'story-creation';
 
 export const getContainer = (containerId: string) => {
-  return new CosmosClient({ endpoint, key }).database(databaseId).container(containerId);
+  try {
+    return new CosmosClient({ endpoint, key }).database(databaseId).container(containerId);
+  } catch (error: any) {
+    console.error('Error getting container:', error.message);
+    throw error;
+  }
 };
-
-// export const client = new CosmosClient({ endpoint, key });
-// export const database = client.database(databaseId);
-// export const container = database.container(containerId);
