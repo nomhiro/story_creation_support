@@ -80,7 +80,7 @@ const StoryForm: React.FC<StoryFormProps> = ({ Story, world_line_id }) => {
   }
   
   return (
-    <div className="mt-10 mx-auto w-full max-w-4xl mx-4">
+    <div className="mt-10 mx-auto w-full max-w-4xl px-4">
     <form action={handleFormAction}>
       <div>
         <label htmlFor="story_title" className="block text-sm font-medium text-blue-900">

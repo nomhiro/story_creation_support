@@ -37,7 +37,7 @@ const WorldLineForm = ({ worldLine }: { worldLine?: WorldLine }) => {
   }
   
   return (
-    <div className="mt-10 mx-auto w-full max-w-2xl">
+    <div className="mt-10 mx-auto w-full max-w-2xl px-4">
     <form action={handleFormAction}>
       <div>
         <label htmlFor="title" className="block text-sm font-medium text-blue-900">

@@ -47,7 +47,7 @@ const CharacterForm: React.FC<CharacterFormProps> = ({ Character, world_line_id 
   }
   
   return (
-    <div className="mt-10 mx-auto w-full max-w-2xl">
+    <div className="mt-10 mx-auto w-full max-w-2xl px-4">
     <form action={handleFormAction}>
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-blue-900">
