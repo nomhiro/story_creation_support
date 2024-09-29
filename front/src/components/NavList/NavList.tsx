@@ -34,7 +34,7 @@ const NavList = () => {
     {
       id: 4,
       label: '物語を書く',
-      link: '/story',
+      link: '/storys',
       icon: <FaRocket className="size-5" />,
     }
   ];
