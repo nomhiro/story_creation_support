@@ -4,7 +4,7 @@ const NotFound = () => {
   return (
     <div
       className="h-screen flex flex-col justify-center items-center bg-slate-50 text-gray-900"
-      style={{ backgroundImage: "url('/MIU404.jpg')", backgroundSize: '50% 50%', backgroundPosition: 'center' }}
+      style={{ backgroundImage: "url('/MIU404.jpg')", backgroundSize: 'auto', backgroundPosition: 'center' }}
     >
       <h1 className="text-8xl font-bold" style={{ marginTop: '-30%' }}>404</h1>
       <p className="text-4xl font-medium">Not Found</p>
