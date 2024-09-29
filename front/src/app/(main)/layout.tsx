@@ -10,6 +10,12 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
     setIsSideMenuVisible(!isSideMenuVisible);
   };
 
+  const hideSideMenu = () => {
+    if (isSideMenuVisible) {
+      setIsSideMenuVisible(false);
+    }
+  };
+
   return (
     <div className="flex h-screen">
       <div className="absolute top-0 left-0 p-2">
@@ -18,7 +24,9 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
         </button>
       </div>
       {isSideMenuVisible && <SideMenu />}
-      <main className="bg-slate-50 flex-1 overflow-auto">{children}</main>
+      <main className="bg-slate-50 flex-1 overflow-auto" onClick={hideSideMenu}>
+        {children}
+      </main>
     </div>
   );
 };
